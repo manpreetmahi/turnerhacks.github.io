@@ -1,86 +1,378 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
+  <head>
+  <style type="text/css">
+  #particles-js canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+</style>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:20px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<title>Manpreet Mahi | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+  <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#apply">Apply</a>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#FAQ">FAQ</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="text-center ">
+      <div class="intro-body">
+        <div class="container">
+             <div class="video-section">
+                  <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="img/videoGIF.gif">
+                    <source src="img/video.mp4" type="video/mp4">
+                    video not supported
+                  </video>
+                </div>   
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>  
+              </a>
+            </div>
+          </div>
+    </header>
+    <!-- About Section -->
+
+    <section id="about" class="content-section text-center" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+          <h2>Hackathon??</h2>
+          <p>
+            Hackathon! It's an event about building the coolest thing you can in 12 hours and meeting awesome people. <br>
+            We don't place any restrictions on the kind of projects you can build. They can be software projects but we'd love to see hardware, or whatever else people come up with as well. It just has to be built within the 12 hours. At the end of the 12 hours we have judges get together and determine the coolest hacks. Winners get awesome prizes!<br><br>
+              TurnerHacks will be hosted by Turner Fenton Secondary School. Over the course of 12 hours, people come together and use coding techniques to create, innovate and make their ideas turn into reality. This hackathon will be open to all high school students. 
+            </p>
+
+      <div class="video">
+                       <center><iframe width="90%" height="315" src="https://www.youtube.com/embed/qj4DQfYx2Hg?rel=0" frameborder="0" allowfullscreen></iframe></center>
+      </div class="col-md-4 fade-up">
+          </div>
+        </div>
+      </div>
+    </section>
+<!--counter-->
+<!--script isn't working :( 
+<section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">what to expect</h3>
+          <p class="section-description"></p>
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">24</span>
+            <p>HOURS</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">4</span>
+            <p>WORKSHOPS</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">100</span>
+            <p>PERCENT ENJOYMENT GUARANTEED</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">4</span>
+            <p>PRIZES</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+-->
+
+    <!-- Apply Section -->
+    <section id="apply" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Apply Now</h2>
+          <p>Registration for TurnerHacks 2018 is now open.</p>
+          <a href="https://www.eventbrite.ca/e/turnerhacks-tickets-45182184129" target="_blank" class="btn btn-default btn-lg">Apply</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!--TEAM-->
+     <section id="team" class="content-section text-center">
+     <!--particlejs
+     <div id="particles-js"></div>
+     -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+          <h1>The team</h1>
+          <img class="img-responsive" src="img/execs.jpg" alt="Executive Picture" width="95%" height="80%" >
+
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-	
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-html,
-p {
-  font-family: 'Roboto Mono', monospace;
-}
-.container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.text {
-  font-weight: 100;
-  font-size: 17px;
-  color: #000;
-}
-.dud {
-  color: #a5a5a5;
-}
-    </style>
+    <!--Sponsors
+       <section id="sponsors" class="content-section text-center">
+          <div class="col-lg-8 mx-auto">
+          <div class="container">
+          <h1>Sponsors</h1>
+          <p></p>
+          <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item axure">
+          <img src="img/sponsors/Axure/axure.png">
+          </li>
+            <li class="list-inline-item balsamiq">
+              <img src="img/sponsors/Balsamiq/balsamiq.png">
+            </li>
+            <li class="list-inline-item jetbrains">
+              <img src="img/sponsors/jetbrains/jetbrains.png" width="125" height="143">
+            </li>
+            <li class="list-inline-item indico">
+              <img src="img/sponsors/Indico/indico.png" width="154" height="46">
+            </li>
+             <li class="list-inline-item">
+              <img src="img/sponsors/Stickermule/stickermule.png" width="15%" height=" 10%">
+            </li>
+            <li class="list-inline-item">
+              <img src="img/sponsors/Sketch/sketch.png" width="170" height="170">
+            </li>
+           
+            <li class="list-inline-item">
+              <img src="img/sponsors/Twilio/twilio.png" width="162" height="75">
+            </li>
+            <li class="list-inline-item">
+              <img src="img/sponsors/TFSS.jpg" width="50%" height="20%">
+            </li>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+      
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+     <section id="sponsors" class="content-section text-center">
+          <div class="col-lg-8 mx-auto">
+          <div class="container">
+          <h1>Sponsors</h1>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/sponsors/Axure/axure.png" style="width:100%">
+    <img src="img/sponsors/stemlabrobotics/stemlabrobotics.png" style="width
+    :100%">
+    <!--<img src="img/sponsors/Stickermule/stickermule.png" style="width:100%"> -->
+  </div>
+  <div class="column">
+    <img src="img/sponsors/Balsamiq/balsamiq.png" style="width:100%">
+    <img src="img/sponsors/Sketch/sketch.png" style="width:100%">
 
-</head>
+  </div>  
+  <div class="column">
+    <img src="img/sponsors/jetbrains/jetbrains.png" style="width:100%">
+    <img src="img/sponsors/makerspace/makerspace.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/sponsors/Indico/indico.png" style="width:100%">
+    <img src="img/sponsors/Twilio/twilio.png" style="width:100%">
+     <img src="img/sponsors/makerspace/blib.jpg" style="width:80%">
+  </div>
+<section id="partners" class="content-section text-center">
+          <div class="col-lg-8 mx-auto">
+          <div class="container">
+          <img src="img/sponsors/TFSS.jpg" style="width:100%">
+          <img src="img/sponsors/brampton/brampton.jpeg" style="width: 100%">
 
-	<body class="is-loading">
+    <!-- FAQ-->
 
-			<div id="wrapper">
+ <section id="FAQ" class="content-section text-center" >
+      <div class="container">
+      <h2>FAQ's</h2>
 
-				<!-- Main -->
+<button class="collapsible text-center">When and where is TurnerHacks?</button>
+<div class="content ">
+  <p>Turner Fenton Secondary School located in the South building, on June 3rd from 8am to 9pm.</p>
+</div>
+<button class="collapsible text-center">Do I have to know how to code beforehand?</button>
+<div class="content">
+  <p>Not at all - TurnerHacks is a perfect opportunity to learn something new!  Throughout the event we’ll have tons of workshops to help you get set up.  We’ll also have mentors floating around to help out whenever you need it!</p>
+</div>
+<button class="collapsible text-center">How many hackers per team?</button>
+<div class="content">
+  <p>Minimum of 2 and maximum of 4!</p>
+</div>
+<button class="collapsible text-center">What should I bring?</button>
+<div class="content">
+  <p>Your laptop, charger, and anything else you’ll need to hack on, as well as comfortable clothes.</p>
+</div>
+<button class="collapsible text-center">Can I become a mentor?</button>
+<div class="content">
+  <p>if you are a post-secondary student who is willing to help out, shoot us an <a href="mailto:turnerhacks2018@gmail.com?">email!</a> 
+</p>
+</div>
+<button class="collapsible text-center">Code of Conduct</button>
+<div class="content">
+  <p>All attendees, mentors, organizers, sponsors, and volunteers have to adhere to the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking Code of Conduct.</a> 
+</p>
+</div>
+<button class="collapsible text-center">Error 404: Question Not Found</button>
+<div class="content">
+  <p>Have a question not listed here? Feel free to email us at <a href="mailto:turnerhacks2018@gmail.com?">turnerhacks2018@gmail.com</a> </p>
+</div>
 
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/me.jpg" alt="" /></span>
-							<h1>Manpreet Mahi</h1>
+      <!--
+        <div class="row">
+        <div class="col-lg-8 mx-auto"> 
+          <div class="column">
+          <h2>FAQ</h2>
+          <h4>When and where is TurnerHacks happening?</h4>
+          <p>It will be happening at Turner Fenton Secondary School located at 7935 Kennedy Rd S, Brampton, ON L6W 0A2, on June 3rd from 8am to 9pm.</p>
 
-							<p>  <div class="container">
+          <h4>Do I have to know how to code beforehand? </h4>
+          <p>Not at all - TurnerHacks is a perfect opportunity to learn something new!  Throughout the event we’ll have tons of workshops to help you get set up.  We’ll also have mentors floating around to help out whenever you need it!.</p>
 
-							  <div class="text"></div>
-							  </div>
-   							 <script src="js/index.js"> </script>
-	<p class="description onesection animated fadeInUp">I'm an aspiring Software Engineer<br>and I <a target="_blank" href="https://www.medium.com/@manpreetmahi" style="color: #000000; text-decoration: underline">write</a>.</p> 
-							</p>
+          <h4>What should I bring?</h4>
+          <p>Your laptop, charger, and anything else you’ll need to hack on, as well as comfortable clothes.</p>
 
-						</header>
-						<footer>
-							<ul class="icons">
-                				<li><a href="mailto:manpreet.mahi04@gmail.com" class="icon fa fa-envelope-o"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/manpreet-mahi/" class="icon fa fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/manpreetmahi" class="icon fa fa-github"><span class="label">Github</span></a></li>
-							</ul>
-						</footer>
-					</section>
+          <h4>How many hackers per team?</h4>
+          <p>Each team can have a max of 4 hackers!.</p>
+          <br/> <br/>
 
-				<!-- Footer -->
-					<footer id="footer">
-					</footer>
+          <h4>Is there going to be hardware?</h4>
+          <p>If you have specific hardware in mind, bring it with you. We will be doing our best to lend hardware at the event and enable you to work on your dream hack. More details about this will be provided closer to the event.</p>
 
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-	</body>
+          <h4>How much coding experience do I need to attend the event?</h4>
+          <p>Whether you are a coding guru, or don’t even know what HTML is, all can apply to TurnerHacks! Little to no coding experience is required for this event.</p>
+
+          <h3>404: Question Not Found</h3>
+          <h4>I have a question that is not listed here. Who should I ask?</h4>
+          <p>Feel free to email us at turnerhacks2018@gmail.com</p>
+
+          </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out regarding any questions/concerns!</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/turnerhacks2018/" class="btn btn-default btn-lg">
+                  <i class="fa fa-instagram fa-fw"></i>
+                  <span class="network-name">Instagram</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:turnerhacks2018@gmail.com?" class="btn btn-default btn-lg">
+                  <i class="fa fa-google fa-fw"></i>
+                  <span class="network-name">Email</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/groups/turnerhacks/?ref=bookmarks" class="btn btn-default btn-lg">
+                  <i class="fa fa-facebook fa-fw"></i>
+                  <span class="network-name">Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <iframe width=100% src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7746.0024956130455!2d-79.72339104022208!3d43.676455043721205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3e35ddb22a37%3A0xab8713d1574614b1!2sTurner+Fenton+Secondary+School!5e0!3m2!1sen!2sca!4v1520828212152" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <!-- Map Section 
+    <div id="map"></div>
+
+    -->
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>made by TurnerHacks ❤️</p>
+      </div>
+    </footer>
+<!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+    <!--particle.js-->
+    <script src="particles.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+    
+  </body>
 
 </html>
